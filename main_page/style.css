@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap');
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family:'Zilla Slab', 'Arial';
+}
+
+/*MAIN MENU*/
+.main-menu{
+    display:flex;
+    align-items:center;
+    background:rgba(255,255,255,1);
+    border-bottom:2px solid rgba(255, 255, 255, 0.3);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    padding:20px 2px 20px;
+    position:static;
+    box-shadow:2px 2px 5px black;
+    justify-content:space-between;
+    width:100%;
+    height:auto;
+}
+
+.main-menu img{
+    margin-left:40px;
+    width:200px;
+}
+
+#menu-txt a{
+    margin:0px 35px 0;
+    font-size:17px;
+    color:rgba(13, 3, 51,1);
+    font-weight:bold;
+    text-decoration:none;
+}
+
+
+#menu-txt a:hover {
+    color:rgba(69, 157, 205, 1);
+}
+
+#redirect-btn{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+#redirect-btn a{
+    font-size:17px;
+    font-weight:500;
+    color:white;
+    background:rgba(69, 157, 205, 1);
+    padding:6px 9px 6px;
+    border-radius:6px;
+    margin:15px;
+}
+
+#redirect-btn a:hover{
+    background:rgba(153, 212, 244, 1);
+}
+
+/*SIDE-MENU*/
+.popup-btn {
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+    font-size:20px;
+    outline:none;
+    display:none;
+}
+
+.open-btn {
+    position:fixed;
+    top:10px;
+    left:10px;
+    color:rgba(69, 157, 205, 1);
+} 
+
+.popup{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    transform:translateX(-100%);
+    transition:transform 0.5s ease-in-out;
+}
+
+/*if there's a .visible class inside the .popup class*/
+
+.popup.visible{
+    transform:translateX(0);
+}
+
+.popup-light{
+    background-color:rgba(255, 255, 255, 1);
+    width:95%;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    padding-top:40px;
+    position:relative;
+}
+
+.popup-dark{
+    background-color:rgba(13, 3, 51, 0.6);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    width:60%;
+    max-width:480px;
+    transition-delay:0.2s;
+}
+
+.close-btn{
+    opacity:0.4;
+    position:absolute;
+    top:40px;
+    right:30px;
+}
+.side-txt-list{
+    list-style-type:none;
+    padding:0;
+}
+
+.side-txt-list li{
+    margin:20px;
+}
+
+.side-txt-list li a, .main-menu a{
+    color:rgba(13, 3, 51, 1);
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+}
+
+.side-txt-list li a:hover, .main-menu a:hover{
+    color:rgba(69, 157, 205, 1);
+}
+
+button:hover{
+    color:rgba(153, 212, 244, 1)
+}
+
+/*SECTION 1*/
+#section1{
+    background-image:url(../main_page/laptop2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+#title h1{
+    font-size:70px;
+    color:white;
+    margin-bottom:30px;
+    text-shadow:2px 2px 4px black;
+    animation:slide-right 1.5s;
+    text-align: center;
+}
+
+#description p{
+    font-size:25px;
+    color:white;
+    margin-bottom:30px;
+    text-shadow:2px 2px 4px black;
+    animation:slide-right 1.5s;
+    text-align: center;
+}
+
+#bottom-btn{
+    background:rgba(69, 157, 205, 1);
+    border:none;
+    border-radius:10px;
+    width:10%;
+    padding:10px 5px 10px;
+    box-shadow:2px 2px 7px rgba(0 ,0 ,0, 0.6);
+}
+
+#bottom-btn:hover{
+    background:rgba(153, 212, 244, 1);
+}
+
+#bottom-btn a{
+    font-size:17px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-family:'Zilla Slab';
+}
+
+/*SECTION 2*/
+#section2{
+    height:75vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color:rgba(255, 255, 255);
+}
+
+.frame{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:right;
+    height:450px;
+    width:50%;
+    margin:30px;
+}
+
+#tutorials-txt h2{
+    color:rgba(69, 157, 205, 1);
+    font-size:40px;
+    margin-bottom:70px;
+    animation:slide-right 2.5s;
+}
+
+hr{
+    width:70%;
+    margin-bottom:70px;
+}
+
+.tutorials-btn{
+    padding-right:90px;
+    animation:slide-right 2.5s
+}
+
+.tutorials-btn a{
+    color:rgba(69, 157, 205, 1);
+    text-decoration:none;
+    font-size:22px;
+    margin-left:30px;
+}
+
+.tutorials-btn a:hover{
+    color:rgba(13, 3, 51, 1);
+}
+
+/*SECTION 3*/
+#section3{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(210, 210, 210);
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:400px;
+    width:80%;
+    margin:30px;
+    box-shadow:20px 15px 70px rgb(0, 0, 0, 0.4);
+    border-radius:10px;
+    border-top:2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter:blur(4px);
+    overflow:hidden;
+ 
+}
+
+#resources-txt h2{
+    color:rgba(13, 3, 51, 1);
+    font-size:40px;
+    margin-bottom:70px;
+    animation:slide-right 3.5s;
+    text-align:center;
+}
+
+
+hr{
+    width:70%;
+    margin-bottom:70px;
+    animation:slide-right 3.5s;
+}
+
+.resources-btn{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:1%;
+    
+}
+
+.resources-btn a{
+    color:rgba(13, 3, 51, 1);
+    text-decoration:none;
+    font-size:22px;
+    animation:slide-right 3.5s;
+}
+
+.resources-btn a:hover{
+    color:rgba(69, 157, 205, 1);
+}
+
+@keyframes slide-right{
+    from {
+        -webkit-transform: translateX(-250%);
+                transform: translateX(-250%);
+      }
+      to {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+}
+
+/*FOOTER*/
+.copyright-footer{
+    background-color:rgb(210, 210, 210);
+    padding-bottom:30px;
+    padding-top:20px;
+}
+
+.copyright-footer h4{
+    text-align:center;
+    color:rgba(13, 3, 51, 1);
+    font-weight:400;
+}
+
+/*MEDIA QUERY*/
+
+@media (min-width:800px) and (max-width:1200px){
+    #bottom-btn{
+        width:15%;
+    }
+
+    #redirect-btn a{
+        font-size:14px;
+        text-align:center;
+    }
+    #menu-txt a{
+        margin:0px 15px 0;
+        font-size:14px;
+    }
+}
+
+@media all and (max-width:800px){
+    #bottom-btn{
+        width:20%;
+    }
+    .main-menu{
+        display:none;
+    }
+
+    .popup-btn{
+        display:block;
+    }
+
+    .tutorials-btn{
+        text-align:center;
+    }
+
+    .tutorials-btn{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+}
