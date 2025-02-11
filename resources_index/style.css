@@ -237,14 +237,13 @@ button:hover{
 
 .container-text h1 {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 53px;
     color:rgba(69, 157, 205, 1);
-	margin-top:80px;
-    margin-bottom:60px;
+	margin-top:70px;
+    margin-bottom:80px;
     display:flex;
     flex-direction:column;
     align-items:center;
- 
 }
 
 .cover{
@@ -318,7 +317,6 @@ a {
 /*FOOTER*/
 .copyright-footer{
     margin-top:100px;
-    background-color:rgb(210, 210, 210);
     padding-bottom:30px;
     padding-top:40px;
 }
@@ -337,9 +335,30 @@ a {
         text-align:center;
     }
     #menu-txt a{
-        margin:0px 15px 0;
-        font-size:14px;
+        margin:0px 5px 0;
+        font-size:13px;
     }
+
+    .container-text h1 {
+        margin-top: 60px;
+        margin-bottom: 85px;
+    }
+}
+
+@media all and (max-width:800px){
+
+    .main-menu{
+        display:none;
+    }
+
+    .popup-btn{
+        display:block;
+    }
+    
+    .content {
+        padding: 60px;
+    }
+
 }
 
 @media (min-width:300px) and (max-width:600px){
@@ -379,16 +398,9 @@ a {
     .container-all{
         width: 95vw;
     }
-}
 
-@media all and (max-width:800px){
-
-    .main-menu{
-        display:none;
+    #menu-txt a{
+        margin:0px 3px 0;
+        font-size:11px;
     }
-
-    .popup-btn{
-        display:block;
-    }
-
 }

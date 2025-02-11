@@ -178,6 +178,8 @@ button:hover{
     margin-top:0;
 }
 .content h1 {
+    margin-top: 70px;
+    font-size: 50px;
 	color:rgba(69, 157, 205, 1);
     margin-bottom:80px;
     text-align:center;
@@ -343,8 +345,23 @@ figure img{
         text-align:center;
     }
     #menu-txt a{
-        margin:0px 15px 0;
-        font-size:14px;
+        margin:0px 5px 0;
+        font-size:13px;
+    }
+
+}
+
+@media all and (max-width:800px){
+    .main-menu{
+        display:none;
+    }
+
+    .popup-btn{
+        display:block;
+    }
+    
+    .content {
+        margin-top: -70px;
     }
 }
 
@@ -362,11 +379,10 @@ figure img{
     .copyright-footer{
         background:100vw;
         margin-left:30px;
-        
     }
 }
 
-@media all and (min-width:600px) and (max-width:1200px){
+@media (min-width:600px) and (max-width:1200px){
   
     .video img{
         width:55vw;
@@ -378,13 +394,10 @@ figure img{
 
 }
 
-@media all and (max-width:800px){
-    .main-menu{
-        display:none;
-    }
-
-    .popup-btn{
-        display:block;
+@media (min-width:600px) and (max-width:900px){
+    #menu-txt a{
+        margin:0px 3px 0;
+        font-size:11px;
     }
 
 }

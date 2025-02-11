@@ -359,8 +359,8 @@ button:hover{
         text-align:center;
     }
     #menu-txt a{
-        margin:0px 15px 0;
-        font-size:14px;
+        margin:0px 5px 0;
+        font-size:13px;
     }
 }
 
@@ -415,6 +415,13 @@ button:hover{
 
     .popup-btn{
         display:block;
+    }
+}
+
+@media (min-width:600px) and (max-width:900px){
+    #menu-txt a{
+        margin:0px 3px 0;
+        font-size:11px;
     }
 }
 
